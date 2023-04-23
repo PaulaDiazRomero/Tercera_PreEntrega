@@ -1,0 +1,32 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %} 
+     <h1>PROFESORES</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+     <h1>Agregar profesor</h1>
+
+<table>
+     <tbody>
+
+          <form action = "" method = "POST">
+               {% csrf_token %}
+               <table>
+                {{ form.as_table }}
+               </table>
+               <input type = "submit" value = "Agregar">
+          </form>
+     </tbody>
+</table>     
+<table>
+     <thead>
+         <tr>
+             
+         </tr>
+     </thead>
+    
+ </table>
+{% endblock %}
